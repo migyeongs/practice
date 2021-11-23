@@ -1,0 +1,21 @@
+<script>
+function matchingChk() {
+			    var form = document.frmMatching;
+			    if (form.service_content.value=="") {
+			        alert("원하는 서비스 종류를 입력해주세요");
+			        form.service_content.focus();
+			        return false;
+			    }
+			    if (form.service_date.value=="") {
+			        alert("서비스를 원하는 날짜를 입력해주세요");
+			        form.service_date.focus();
+			        return false;
+			    }
+			    if (form.addr.value=="") {
+			        alert("주소를 입력해주세요");
+			        form.addr.focus();
+			        return false;
+			    }
+			   form.submit();
+			};
+</script>
